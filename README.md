@@ -1,9 +1,14 @@
 # Mealy FSM Minimizer
+A C implementation of minimizing Mealy Finite State Machines.
+
+### Key Features
+- **Dynamic Memory Management**: Uses 2D pointer-based matrices to handle variable FSM sizes efficiently.
+- **Implication Table Algorithm**: Implements systematic elimination of non-equivalent states.
+- **Transitive Grouping**: Efficiently merges state pairs into final equivalence classes using a "boss/leader" tracking system.
+- **Input Validation**: Robust handling of user input and memory allocation safety checks.
 
 ## Motivation
 This project was developed as a practical tool for the **Logical Design of Digital Systems** course. Its primary purpose is to provide a quick and reliable way to verify manual calculations of Mealy FSM minimization (implication tables and equivalence classes) while practicing for exams.
-
-A C implementation of minimizing Mealy Finite State Machines.
 
 ## Logic & Implementation
 Equivalent states must satisfy two conditions:
